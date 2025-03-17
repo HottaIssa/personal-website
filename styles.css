@@ -1,0 +1,125 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+body {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+  background: rgb(80, 80, 80);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(50, 50, 50);
+  position: fixed;
+  width: calc(100% - 24px);
+  padding: 4px 12px;
+}
+
+nav {
+  grid-column-start: end;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+}
+
+nav > ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+#about-section {
+  margin-top: 58px;
+}
+
+#about-section > article {
+  margin: 10vw;
+  margin-right: 50vw;
+}
+
+h1 {
+  font-size: 56px;
+  margin: 0;
+}
+
+section > h2 {
+  text-align: center;
+}
+
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  justify-items: center;
+}
+
+.card-project {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 280px;
+  padding: 15px;
+}
+
+.card-project > img {
+  width: 280px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.card-project > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.f-card {
+  display: flex;
+  justify-content: center;
+}
+
+a > img {
+  width: 40px;
+}
+
+.footer-container {
+  background: rgb(50, 50, 50);
+}
+
+.container-contact > ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-container > p {
+  text-align: center;
+}
